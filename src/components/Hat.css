@@ -1,0 +1,49 @@
+.sorting-hat {
+    width: 100%;
+    /* margin-top: 1em; */
+    /* background: red; */
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+} 
+
+.sorting-hat-image {
+    min-width: 35%;
+    min-height: 500px;
+    background: url('/sorting_hat.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none; 
+}
+
+.sorting-hat-image:focus{
+    outline: none;  
+    /* animation: shake .5s;  */
+}
+
+.sorting-hat-image:active {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {
+      transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(10deg)
+    }
+    30% {
+        transform: rotate(-10deg)
+    }
+    60% {
+        transform: rotate(10deg)
+    }
+    80% {
+        transform: rotate(-10deg)
+    }
+    100% {
+      transform: rotate(0deg)
+    }
+  }
